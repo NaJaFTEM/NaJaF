@@ -4225,7 +4225,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '♪ Source Channel',url="https://t.me/U56RRR"}},
 {{text = '♪ Exp Source',url="t.me/U56RR9"}},
-{{text = '♪ Developer',url="t.me/U56RR"}},
+{{text = '♪ Developer',url="t.me/y0000"}},
 {{text = '♪ Tws NaJaF',url="https://t.me/U56RRTBOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
@@ -4364,9 +4364,10 @@ end
 getUser(msg.sender_user_id_,get_firstname)
 end   
 --     Source NaJaF     --
-if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙@HMSEBOT', 1, 'md') end
+if text == "اهمس" or text == "همسه" or text == "اريد بوت الهمسه" or text == "دزلي بوت الهمسه" or  text == "دزولي بوت الهمسه" then  Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙@NW3bot', 1, 'md') end
 if text == "رابط حذف" or text == "رابط الحذف" or text == "اريد رابط الحذف" or  text == "شمرلي رابط الحذف" or text == "اريد رابط حذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'♪︙اضغط للحصول على الرابط',nil,inline) return false end
 if text == "بوت الحذف" or text == "اريد بوت الحذف" or text == "اريد بوت حذف" or text == "بوت حذف" or text == "بوت حذف حسابات" or text == "راح احذف" then local inline = {{{text="اضغط هنا",url="https://t.me/DYFBOT"}}} SendInline(msg.chat_id_,'♪︙اضغط للحصول على البوت',nil,inline) return false end
+if text == "يوتيوب" and ChCheck(msg) or text == "اليوتيوب" and ChCheck(msg) or text == "بوت يوتيوب" and ChCheck(msg) or text == "بوت اليوتيوب" and ChCheck(msg) or text == "اريد بوت يوتيوب" and ChCheck(msg) or text == "شمرلي بوت يوتيوب" and ChCheck(msg) or text == "يوت يوب" and ChCheck(msg) then local inline = {{{text="اضغط هنا",url="https://t.me/W7Cbot"}}} SendInline(msg.chat_id_,'♪︙اضغط للحصول على بوت اليوتيوب',nil,inline) return false end
 if text == "جهاتي" and ChCheck(msg) or text == "اضافاتي" and ChCheck(msg) then add = (tonumber(DevAli:get(NaJaF..'Ali:ContactNumber'..msg.chat_id_..':'..msg.sender_user_id_)) or 0) Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙عدد جهاتك المضافه ↫ *❨ "..add.." ❩* ", 1, 'md') end
 if text == "تعديلاتي" or text == "سحكاتي" and ChCheck(msg) then local edit_msg = DevAli:get(NaJaF..'Ali:EditMsg'..msg.chat_id_..msg.sender_user_id_) or 0  Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙عدد تعديلاتك ↫ *❨ "..edit_msg.." ❩* ", 1, 'md') end
 if text == "ايديي" and ChCheck(msg) then Dev_Ali(msg.chat_id_, msg.id_, 1,'♪︙ايديك ↫ ❨ `'..msg.sender_user_id_..'` ❩', 1, 'md') end
