@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (Ali) @AAAPA.--
---    This Is The Source Channel @U56RRR .    --
---                 - NaJaF -                  --
---         -- https://t.me/U56RRR --          --
+-- This Source Was Developed By (RaHMaN) @U2288.--
+--    This Is The Source Channel @CUKUR_TAEM .    --
+--                 - CUKUR -                  --
+--         -- https://t.me/CUKUR_TAEM  --          --
 ------------------------------------------------ 
 redis = require('redis') 
 URL = require('socket.url') 
@@ -4219,14 +4219,14 @@ end
 if text == "السورس" or text == "سورس" then 
 Text = [[
 Welcome To Source
-♪︙[NaJaF TEAM](https://t.me/U56RRR)
+♪︙[CUKUR TAEM](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♪ Source Channel',url="https://t.me/U56RRR"}},
-{{text = '♪ Exp Source',url="t.me/U56RR9"}},
+{{text = '♪ Source Channel',url="https://t.me/CUKUR_TAEM"}},
+{{text = '♪ Exp Source',url="t.me/F2222P"}},
 {{text = '♪ Developer',url="t.me/u2288"}},
-{{text = '♪ Tws NaJaF',url="https://t.me/U56RRTBOT"}},
+{{text = '♪ Tws NaJaF',url="https://t.me/FR88BoT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -10730,8 +10730,8 @@ end
 --     Source NaJaF     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (Ali) @AAAPA.--
---   This Is The Source Channel @U56RRR .   --
+-- This Source Was Developed By (RaHMaN) @U2288.--
+--   This Is Th Source Channel @CUKUR_TAEM .   --
 --                - NaJaF -                 --
---        -- https://t.me/U56RRR --         --
+--        -- https://t.me/CUKUR_TAEM --         --
 ------------------------------------------------ 
