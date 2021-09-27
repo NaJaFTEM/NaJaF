@@ -4225,7 +4225,7 @@ keyboard = {}
 keyboard.inline_keyboard = {
 {{text = '♪ Source Channel',url="https://t.me/U56RRR"}},
 {{text = '♪ Exp Source',url="t.me/U56RR9"}},
-{{text = '♪ Developer',url="t.me/y0000"}},
+{{text = '♪ Developer',url="t.me/u2288"}},
 {{text = '♪ Tws NaJaF',url="https://t.me/U56RRTBOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
